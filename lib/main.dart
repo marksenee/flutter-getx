@@ -3,8 +3,9 @@ import 'package:get/get.dart';
 import 'package:getx/pages/home_page.dart';
 import 'package:getx/pages/getData_page.dart';
 import 'package:getx/pages/navigation_page.dart';
+import 'package:getx/pages/reactive_state_page.dart';
 import 'package:getx/pages/sample_page.dart';
-import 'package:getx/pages/controller_page.dart';
+import 'package:getx/pages/simple_state_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       home: const HomePage(),
       getPages: [
         GetPage(name: '/home', page: () => const HomePage()),
-        GetPage(name: '/controller', page: () => const ControllerPage()),
+        GetPage(name: '/simple', page: () => const SimpleStatePage()),
+        GetPage(name: '/reactive', page: () => const ReactiveStatePage()),
         GetPage(name: '/navigation', page: () => const NavigationPage()),
         GetPage(name: '/sample', page: () => const SamplePage()),
         GetPage(name: '/getData', page: () => const GetDataPage())

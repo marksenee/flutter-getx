@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/pages/navigation_page.dart';
 import 'package:getx/pages/sample_page.dart';
+import 'package:getx/utils/controller/getx_controller.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -31,12 +32,21 @@ class _HomePageState extends State<HomePage> {
           Align(
             alignment: AlignmentDirectional.center,
             child: ElevatedButton(onPressed: (){
-              Get.toNamed('/controller');
+              Get.toNamed('/simple');
             },
                 child: const Text(
-                    "Getx State Management"
+                    "Getx Simple State Management"
                 )),
-          )
+          ),
+          Align(
+            alignment: AlignmentDirectional.center,
+            child: ElevatedButton(onPressed: (){
+              Get.toNamed('/reactive');
+            },
+                child: const Text(
+                    "Getx Reactive State Management"
+                )),
+          ),
         ],
       ),
     );
