@@ -15,7 +15,7 @@ class _NavigationPageState extends State<NavigationPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_rounded),
+          icon: const Icon(Icons.arrow_back_ios_rounded),
           onPressed: (){
             Get.toNamed('/home');
           },
@@ -74,6 +74,58 @@ class _NavigationPageState extends State<NavigationPage> {
               leading: const Text("Send Data"),
               onTap: () {
                 Get.toNamed('/getData', arguments: "Hello Mark");
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const Text("SnackBar"),
+              onTap: () {
+                Get.snackbar(
+                    "안녕",
+                    "안녕? 나는 Mark야",
+                  icon: const Icon(Icons.alarm_add_rounded)
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const Text("Get.defaultDialog"),
+              onTap: () {
+                Get.defaultDialog(
+                  title: "Dialog",
+                  middleText: "Getx Dialog",
+                  textCancel: "취소",
+                  textConfirm: "확인",
+                  onConfirm: () => print("확인")
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const Text("Get.dialog"),
+              onTap: () {
+                Get.dialog(
+                  const Center(
+                      child: Text("Get.dialog"))
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const Text("Get.bottomSheet"),
+              onTap: () {
+                Get.bottomSheet(
+                  Container(
+                    color: Colors.white,
+                    height: Get.height * 0.5,
+                    child: const Center(
+                        child: Text("Get.bottomSheet")),
+                  )
+                );
               },
             ),
           ),
