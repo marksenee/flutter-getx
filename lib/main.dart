@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/pages/home_page.dart';
-import 'package:getx/pages/getData_page.dart';
+import 'package:getx/pages/get_data_page.dart';
 import 'package:getx/pages/navigation_page.dart';
 import 'package:getx/pages/reactive_state_page.dart';
 import 'package:getx/pages/sample_page.dart';
