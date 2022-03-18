@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx/pages/navigation_page.dart';
-import 'package:getx/pages/sample_page.dart';
-import 'package:getx/utils/controller/getx_controller.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,7 +13,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Getx Study"),
+        title: const Text("Getx"),
       ),
       body: Column(
         children: [
@@ -26,7 +23,7 @@ class _HomePageState extends State<HomePage> {
               Get.toNamed('/navigation');
             },
                 child: const Text(
-                  "Getx Navigation"
+                    "Getx Navigation"
                 )),
           ),
           Align(

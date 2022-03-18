@@ -39,7 +39,7 @@ class _ReactiveStatePageState extends State<ReactiveStatePage> {
               ),
               IconButton(
                   onPressed: (){
-                    controller.increment2();
+                    controller.increment2(); // 함수 호출
                   },
                   icon: const Icon(Icons.add)),
             ]
