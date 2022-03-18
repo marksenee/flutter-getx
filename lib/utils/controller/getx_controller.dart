@@ -8,9 +8,9 @@ class Controller extends GetxController {
   }
 
   // Rx 선언 방법 3가지
-  var firstCounter = 0.obs;
-  var secondCounter = Rx<int>(0);
-  var thirdCounter = RxInt(0);
+  RxInt firstCounter = 0.obs;
+  final secondCounter = Rx<int>(0);
+  final thirdCounter = RxInt(0);
 
   void increment2() {
     firstCounter.value++;

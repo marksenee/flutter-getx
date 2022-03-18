@@ -41,7 +41,7 @@ class _ReactiveStatePageState extends State<ReactiveStatePage> {
                   onPressed: (){
                     controller.increment2();
                   },
-                  icon: const Icon(Icons.add))
+                  icon: const Icon(Icons.add)),
             ]
         )
     );
