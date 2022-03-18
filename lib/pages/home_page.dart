@@ -27,6 +27,15 @@ class _HomePageState extends State<HomePage> {
                 child: const Text(
                   "Getx Navigation"
                 )),
+          ),
+          Align(
+            alignment: AlignmentDirectional.center,
+            child: ElevatedButton(onPressed: (){
+              Get.toNamed('/controller');
+            },
+                child: const Text(
+                    "Getx State Management"
+                )),
           )
         ],
       ),
